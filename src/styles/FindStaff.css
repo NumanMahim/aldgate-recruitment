@@ -1,0 +1,124 @@
+/* ========== Find Staff Page Styling ========== */
+.find-staff-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px;
+  background: linear-gradient(135deg, #1e1e1e, #333333);
+  color: white;
+}
+
+/* Left Section Styling */
+.left-section {
+  width: 25%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.left-section h2 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+}
+
+.left-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-section li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Center Section */
+.find-staff-container {
+  width: 50%;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Form Styling */
+.animated-form input,
+.animated-form select,
+.animated-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #f0c505;
+  border-radius: 5px;
+  margin-top: 10px;
+  background: #222;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.animated-form input:focus,
+.animated-form select:focus,
+.animated-form textarea:focus {
+  border-color: #ff8000;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(255, 128, 0, 0.5);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #f9c800, #ff8000);
+  color: black;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg, #ff8000, #f9c800);
+  transform: scale(1.05);
+}
+
+/* Right Section (Testimonials) */
+.right-section {
+  width: 25%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.right-section h2 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+}
+
+.right-section p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .find-staff-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section, .right-section {
+    width: 90%;
+  }
+
+  .find-staff-container {
+    width: 100%;
+  }
+}
