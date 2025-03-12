@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/aldgate-recruitment/static/css/main.7efadac1.css",
+    "main.js": "/aldgate-recruitment/static/js/main.a2582fb0.js",
+    "static/media/fa-solid-900.ttf": "/aldgate-recruitment/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/logoqwithbackground.png": "/aldgate-recruitment/static/media/logoqwithbackground.d920b94d62232166dfd5.png",
+    "static/media/fa-brands-400.ttf": "/aldgate-recruitment/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/aldgate-recruitment/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/recruitment.png": "/aldgate-recruitment/static/media/recruitment.2297f8724319d1c94753.png",
+    "static/media/fa-brands-400.woff2": "/aldgate-recruitment/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/aldgate-recruitment/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/recruitmentagency.png": "/aldgate-recruitment/static/media/recruitmentagency.c1bf0fa6284beaa312c1.png",
+    "static/media/logo.png": "/aldgate-recruitment/static/media/logo.1c50976c008037075d3f.png",
+    "static/media/fa-regular-400.woff2": "/aldgate-recruitment/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/placeholder.jpg": "/aldgate-recruitment/static/media/placeholder.42c17a44eb776c1e9583.jpg",
+    "static/media/fa-v4compatibility.ttf": "/aldgate-recruitment/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/aldgate-recruitment/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/aldgate-recruitment/index.html",
+    "main.7efadac1.css.map": "/aldgate-recruitment/static/css/main.7efadac1.css.map",
+    "main.a2582fb0.js.map": "/aldgate-recruitment/static/js/main.a2582fb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7efadac1.css",
+    "static/js/main.a2582fb0.js"
+  ]
+}
