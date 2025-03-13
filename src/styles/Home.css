@@ -1,160 +1,90 @@
 /* ============================
-   ABOUT US SECTION
+   ABOUT US SECTION (Styled Exactly Like Image)
    ============================ */
+
    .about-us-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 10%;
-    background: linear-gradient(90deg, #1a1a1a, #3b3c3d);
-    border-radius: 10%;
-    margin-top: 100px;
+    padding: 100px 10%; /* Increased padding for spacing */
+    background: #021B39; /* Deep Navy Blue - More Professional */
     color: white;
-}
-/* ============================
-   STYLED HEADING (PROFESSIONAL DESIGN)
-   ============================ */
-   .styled-heading {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    background: linear-gradient(90deg, #5a37e4, #b70beb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-    letter-spacing: 1px;
-    animation: fadeInUp 1.5s ease-out, glowEffect 2s infinite alternate ease-in-out;
+    position: relative;
 }
 
-/* Animation: Fade-in & Slide-up */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Glow Effect on Hover */
-.styled-heading:hover {
-    text-shadow: 0 0 20px rgba(181, 13, 187, 0.8), 0 0 30px rgba(255, 69, 0, 0.8);
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
-}
-
-/* Responsive Font Size */
-@media screen and (max-width: 768px) {
-    .styled-heading {
-        font-size: 2rem;
-    }
-}
-/* ============================
-   STYLED PARAGRAPH (PROFESSIONAL DESIGN)
-   ============================ */
-   .styled-paragraph {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    padding: 15px;
-    
-    /* Gradient Text Effect */
-    background: linear-gradient(90deg, #e3ed94, #eb0b4b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    /* Subtle Shadow */
-    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.2);
-
-    /* Fade-in Animation */
-    animation: fadeInText 2s ease-in-out;
-}
-
-/* Keyframes for Fade-in Effect */
-@keyframes fadeInText {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Highlight Important Words */
-.highlight {
-    font-weight: bold;
-    background: linear-gradient(90deg, #ffcc00, #ff6600);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .styled-paragraph {
-        font-size: 1rem;
-        text-align: center;
-    }
-}
-
-/* Content Area */
+/* Left Side Content */
 .about-content {
     max-width: 50%;
 }
 
-.about-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+/* Styled Heading (Gradient Text for Impact) */
+.styled-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #4FACFE, #00F2FE); /* Blue Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-out;
 }
 
-.about-content p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #ddd;
+/* Professional Paragraph Styling */
+.styled-paragraph {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #D6E4F0; /* Light Blue-Gray for Better Readability */
+    max-width: 600px;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.1);
+    animation: fadeInText 2s ease-in-out;
+}
+
+/* Highlighted Words */
+.highlight {
+    font-weight: bold;
+    background: linear-gradient(90deg, #FFD700, #FFA500); /* Gold-Orange Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Buttons */
 .about-buttons {
     display: flex;
     gap: 15px;
+    margin-top: 20px;
+}
+
+.demo-button,
+.play-button {
+    padding: 14px 24px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Demo Button */
 .demo-button {
-    background: #f0c505;
-    color: black;
-    padding: 12px 20px;
-    font-size: 1rem;
+    background: #FF4B2B; /* Bright Red */
+    color: white;
     border: none;
-    cursor: pointer;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .demo-button:hover {
-    background: #d9a700;
+    background: #E03A1A;
 }
 
-/* Play Button */
+/* Solution Button */
 .play-button {
+    background: white;
+    color: black;
+    border: 2px solid white;
     display: flex;
     align-items: center;
-    background: none;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 15px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
 }
 
 .play-button i {
@@ -166,149 +96,202 @@
     color: black;
 }
 
-/* About Us Image */
-.about-image img {
-    max-width: 450px;
-    border-radius: 20px;
-    margin-top: 100px; /* Moves the image slightly downward */
-    margin-bottom: 100px;
+/* ============================
+   ENHANCED ANIMATED RIGHT SIDE
+   ============================ */
+.about-animation {
+    position: relative;
+    width: 420px;  /* Bigger Size */
+    height: 420px; /* Bigger Size */
+    background: #1A2748; /* Dark Blue for contrast */
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    animation: floatUp 4s infinite ease-in-out alternate;
+}
+
+/* Floating Animation */
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
 }
 
 /* ============================
-   RESPONSIVE DESIGN (SMALL SCREENS) - IMAGE ON TOP
+   RESPONSIVE DESIGN (Mobile Fix)
    ============================ */
 @media screen and (max-width: 768px) {
     .about-us-section {
         flex-direction: column;
         text-align: center;
-        padding: 40px 5%;
+        padding: 80px 5%; /* Added more padding to fix header overlap */
+        margin-top: 80px; /* Push content down from header */
     }
 
-    .about-image {
-        max-width: 100%;
-        margin-top: 50px;
-        order: 1; /* Image comes first */
+    .about-animation {
+        order: 1; /* Animation First */
+        width: 300px; /* Adjusted for Mobile */
+        height: 300px;
+        margin-bottom: 20px;
     }
 
     .about-content {
         max-width: 100%;
-        order: 2; /* Text comes below */
+        order: 2; /* Content Comes Below Animation */
+    }
+
+    .styled-heading {
+        font-size: 2.2rem;
+    }
+
+    .styled-paragraph {
+        font-size: 1rem;
     }
 
     .about-buttons {
         justify-content: center;
     }
-
-    .about-image img {
-        max-width: 100%;
-        margin-top: 0px; /* Remove excess margin */
-        margin-bottom: 20px; /* Space between image and text */
-    }
 }
 
 
 /* ============================
-   BENEFITS SECTION
+   BENEFITS SECTION (Styled like Image)
    ============================ */
    .benefits-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #f3f8fc; /* Light background */
     padding: 80px 10%;
-    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
-    color: white;
-    position: relative;
-    overflow: hidden;
-    margin-top: 50px;
-}
-
-/* Overlay Effect for Depth */
-.benefits-overlay {
-    max-width: 900px;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
-/* Section Title */
-.section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 25px;
-    background: linear-gradient(90deg, #ffcc00, #ff6600);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 8px rgba(255, 165, 0, 0.3);
+/* Benefits Content - Flex Layout */
+.benefits-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Benefit Items */
-.benefit {
+/* Left Side - Text */
+.benefits-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.benefits-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3d4c7d;
     margin-bottom: 20px;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+}
+
+.benefits-description {
+    font-size: 1.2rem;
+    color: #5f6b8d;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Demo Button */
+.demo-button {
+    background: #ff755c;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-/* Benefit Titles */
-.benefit h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #ffd700;
+.demo-button:hover {
+    background: #ff5436;
 }
 
-/* Benefit Description */
-.benefit p {
-    font-size: 1.1rem;
-    color: #ddd;
-    line-height: 1.6;
+.demo-button span {
+    margin-left: 5px;
 }
 
-/* Hover Effect */
-.benefit:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-}
-
-/* Illustration */
-.benefits-illustration {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.4;
-}
-
-.illustration {
-    width: 300px;
-    height: 300px;
+/* Right Side - Lottie Animation */
+.benefits-animation {
+    width: 400px;
+    height: auto;
 }
 
 /* ============================
-   RESPONSIVE DESIGN (FOR SMALL SCREENS)
+   STATISTICS SECTION
+   ============================ */
+.benefits-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Individual Stat Card */
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: #0077ff;
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3d4c7d;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 1.1rem;
+    color: #5f6b8d;
+}
+
+/* Hover Effect */
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================
+   RESPONSIVE DESIGN (Mobile Fixes)
    ============================ */
 @media screen and (max-width: 768px) {
-    .benefits-section {
-        padding: 40px 5%;
+    .benefits-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .benefits-overlay {
-        padding: 30px;
+    .benefits-text {
+        max-width: 100%;
+        text-align: center;
     }
 
-    .section-title {
-        font-size: 2rem;
+    .benefits-animation {
+        width: 300px;
+        margin-top: 20px;
     }
 
-    .benefit h3 {
-        font-size: 1.4rem;
-    }
-
-    .benefits-illustration {
-        display: none;
+    .benefits-stats {
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -417,18 +400,18 @@
     }
 }
 
-
 /* ============================
    THIRD SECTION (DARK BACKGROUND)
    ============================ */
    .third-section {
-    background: #121212;
+    background: #0c0101;
     color: white;
     padding: 80px 10%;
     display: flex;
     justify-content: center;
 }
 
+/* Main Container */
 .third-container {
     display: flex;
     align-items: center;
@@ -443,12 +426,14 @@
     max-width: 45%;
 }
 
+/* Section Title */
 .third-title {
     font-size: 2.5rem;
     font-weight: bold;
     color: #f2f2f2;
 }
 
+/* Section Description */
 .third-description {
     font-size: 1.1rem;
     color: #ccc;
@@ -473,6 +458,7 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* Work Button */
 .work-button {
     background: #e6a00f;
     border: none;
@@ -483,6 +469,7 @@
     background: #c88b0d;
 }
 
+/* Staff Button */
 .staff-button {
     background: #444;
     border: none;
@@ -510,53 +497,106 @@
     color: #ccc;
 }
 
-/* Logo */
-.third-logo img {
-    max-width: 200px;
-    opacity: 0.8;
-    filter: drop-shadow(4px 4px 15px rgba(255, 255, 255, 0.2));
+/* ============================
+   LOGO STYLING (FLIP ONCE + FLOATING EFFECT)
+   ============================ */
+.third-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-/* Features */
+/* Logo Image */
+.third-logo img {
+    width: 250px;  
+    height: auto;
+    opacity: 1;
+    border-radius: 15px;
+    background: #F7F8FC; /* Light Background for Visibility */
+    padding: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.6s ease-in-out;
+    animation: floatUpDown 4s infinite ease-in-out alternate;
+}
+
+/* Flip ONLY ONCE on Hover */
+.third-logo img:hover {
+    transform: rotateY(180deg);
+}
+
+/* Flip ONLY ONCE on Click */
+.third-logo img:active {
+    transform: rotateX(180deg);
+}
+
+/* Continuous Floating Effect (Up & Down) */
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+/* ============================
+   FEATURES SECTION (WIDER & IMPROVED VISIBILITY)
+   ============================ */
 .third-features {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
+    max-width: 1000px; /* Made the section wider */
+    width: 100%;
+    margin: auto;
 }
 
+/* Feature Card Styling */
 .feature-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15); /* Slightly lighter background */
+    padding: 20px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     transition: all 0.3s ease-in-out;
+    width: 100%;
+    max-width: 800px; /* Increased width */
 }
 
+/* Icon Styling */
 .feature-card i {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #e6a00f;
+    background: #fff; /* Light background for better visibility */
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
 }
 
+/* Feature Title */
 .feature-card h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #f2f2f2;
+    font-weight: bold;
 }
 
+/* Feature Description */
 .feature-card p {
-    font-size: 1rem;
-    color: #ccc;
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.5;
 }
 
 /* Hover Effect */
 .feature-card:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     transform: scale(1.05);
 }
 
 /* ============================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (Mobile Fixes)
    ============================ */
 @media screen and (max-width: 768px) {
     .third-container {
@@ -576,21 +616,41 @@
         justify-content: center;
     }
 
+    /* Center Logo on Small Screens */
     .third-logo {
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .third-logo img {
+        width: 200px; /* Slightly smaller for mobile */
     }
 
     .third-features {
         align-items: center;
     }
+
+    .feature-card {
+        flex-direction: column;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .feature-card i {
+        font-size: 2rem;
+        padding: 15px;
+    }
 }
+
 
 
 /* ============================
    DEPARTMENTS SECTION
    ============================ */
    .departments-section {
-    background: #faf7f2;
+    background: #79136d;
     padding: 80px 10%;
     text-align: center;
 }

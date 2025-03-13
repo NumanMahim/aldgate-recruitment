@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./pages/Header"; // Adjust path if needed
-import Footer from "./pages/Footer"; // Import Footer
-import Home from "./pages/Home"; // Import Home Page
-import FindStaff from "./pages/FindStaff"; // ✅ Correctly import FindStaff
-import ApplyForJobs from "./pages/ApplyForJobs"; // ✅ Import ApplyForJobs
-import Contact from "./pages/Contact"; // ✅ Import Contact Page
-import AboutUs from "./pages/AboutUs"; // ✅ Import About Us Page
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Header from "./pages/Header"; 
+import Footer from "./pages/Footer"; 
+import Home from "./pages/Home"; 
+import FindStaff from "./pages/FindStaff"; 
+import ApplyForJobs from "./pages/ApplyForJobs"; 
+import Contact from "./pages/Contact";
+import AboutUs from "./pages/AboutUs"; 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const App = () => {
@@ -14,11 +14,18 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/find-staff" element={<FindStaff />} /> {/* ✅ Correct Route */}
-        <Route path="/apply" element={<ApplyForJobs />} /> {/* ✅ Now Loads ApplyForJobs */}
-        <Route path="/contact" element={<Contact />} /> {/* ✅ Now Loads Contact Page */}
-        <Route path="/about" element={<AboutUs />} /> {/* ✅ Now Loads About Us Page */}
+        {/* Redirect "/" to "/home" */}
+        <Route path="/" element={<Navigate replace to="/home" />} />
+
+        {/* Main Routes */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/find-staff" element={<FindStaff />} />
+        <Route path="/apply" element={<ApplyForJobs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
+
+        {/* Catch-all invalid routes and redirect to "/home" */}
+        <Route path="*" element={<Navigate replace to="/home" />} />
       </Routes>
       <Footer />
     </Router>
