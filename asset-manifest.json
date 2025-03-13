@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aldgate-recruitment/static/css/main.7efadac1.css",
-    "main.js": "/aldgate-recruitment/static/js/main.a2582fb0.js",
+    "main.css": "/aldgate-recruitment/static/css/main.dfc369cb.css",
+    "main.js": "/aldgate-recruitment/static/js/main.3a039f02.js",
     "static/media/fa-solid-900.ttf": "/aldgate-recruitment/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/logoqwithbackground.png": "/aldgate-recruitment/static/media/logoqwithbackground.d920b94d62232166dfd5.png",
     "static/media/fa-brands-400.ttf": "/aldgate-recruitment/static/media/fa-brands-400.1815e00441357e01619e.ttf",
@@ -16,11 +16,11 @@
     "static/media/fa-v4compatibility.ttf": "/aldgate-recruitment/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/aldgate-recruitment/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/aldgate-recruitment/index.html",
-    "main.7efadac1.css.map": "/aldgate-recruitment/static/css/main.7efadac1.css.map",
-    "main.a2582fb0.js.map": "/aldgate-recruitment/static/js/main.a2582fb0.js.map"
+    "main.dfc369cb.css.map": "/aldgate-recruitment/static/css/main.dfc369cb.css.map",
+    "main.3a039f02.js.map": "/aldgate-recruitment/static/js/main.3a039f02.js.map"
   },
   "entrypoints": [
-    "static/css/main.7efadac1.css",
-    "static/js/main.a2582fb0.js"
+    "static/css/main.dfc369cb.css",
+    "static/js/main.3a039f02.js"
   ]
 }
