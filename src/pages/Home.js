@@ -6,6 +6,8 @@ import Lottie from "lottie-react";
 import logo from "../images/logo.png";
 import aboutUsAnimation from "../animations/aboutus.json";
 import benefitsAnimation from "../animations/benefits.json";
+import servicesAnimation from "../animations/services.json"; 
+import departmentAnimation from "../animations/department.json";
 const Home = () => {
   return (
     <div className="home">
@@ -143,142 +145,76 @@ const Home = () => {
 
       {/* Services Section */}
       <section className="services-section">
-        <div className="services-overlay">
-          <h2 className="section-title">Our Services</h2>
-          <p className="section-description">
-            We specialize in staff recruitment, job placement, and career coaching, 
-            helping businesses find top talent and guiding professionals to their 
-            dream jobs.
+      <div className="services-container">
+        {/* Left Side: Text & Stats */}
+        <div className="services-text">
+          <h2 className="services-title">Delivering Superior Preventative Care</h2>
+          <p className="services-description">
+            Aldgate Recruitment helps businesses hire top talent efficiently, ensuring 
+            smooth recruitment processes and long-term success.
           </p>
-          <div className="services-container">
-            <div className="service-card">
-              <i className="fas fa-users"></i>
-              <h3>Staff Recruitment</h3>
-              <p>Find the best talent suited for your company’s needs.</p>
-            </div>
-            <div className="service-card">
-              <i className="fas fa-briefcase"></i>
-              <h3>Job Placement</h3>
-              <p>Connecting professionals with top job opportunities.</p>
-            </div>
-            <div className="service-card">
-              <i className="fas fa-chalkboard-teacher"></i>
-              <h3>Career Coaching</h3>
-              <p>Helping individuals grow and excel in their careers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Departments Section */}
-      <section className="departments-section">
-        <h2 className="departments-title">Departments</h2>
-        <div className="departments-container">
-          <div className="department-card">
-            <div className="department-image"></div>
-            <div className="department-content">
-              <h3>Hospitality</h3>
-              <p>Providing expert staff for hotels, restaurants, and catering services.</p>
+          <div className="services-stats">
+            <div className="stat-card">
+              <i className="fas fa-clipboard-list"></i>
+              <h3>80% Engagement Rate</h3>
+              <p>Keeps businesses connected with high-quality professionals.</p>
             </div>
-          </div>
-          <div className="department-card">
-            <div className="department-image"></div>
-            <div className="department-content">
-              <h3>Retail</h3>
-              <p>Trained professionals for retail stores, supermarkets, and sales teams.</p>
-            </div>
-          </div>
-          <div className="department-card">
-            <div className="department-image"></div>
-            <div className="department-content">
-              <h3>Healthcare</h3>
-              <p>Connecting healthcare institutions with experienced medical professionals.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Recruitment Section */}
-      <section className="recruitment-section">
-        <div className="recruitment-container">
-          <div className="recruitment-image">
-            <img src={recruitmentImage} alt="Recruitment Process" />
-          </div>
-          <div className="recruitment-content">
-            <h2 className="recruitment-title">Constructing a Premier Hospitality Staffing Company</h2>
-            <p className="recruitment-description">
-              With years of experience, Aldgate Recruitment has become one of the UK's leading 
-              staffing agencies, providing top-class professionals to venues, caterers, and hotels 
-              across Central London.
-            </p>
-            <h3 className="offer-title">What We Offer</h3>
-            <ul className="offer-list">
-              <li><i className="fas fa-check-circle"></i> Experienced and skilled workers</li>
-              <li><i className="fas fa-check-circle"></i> Reliable staffing solutions</li>
-              <li><i className="fas fa-check-circle"></i> Quick and hassle-free hiring</li>
-              <li><i className="fas fa-check-circle"></i> Flexible job opportunities</li>
-              <li><i className="fas fa-check-circle"></i> Personalized recruitment strategies</li>
-            </ul>
-            <div className="recruitment-buttons">
-              <button className="work-button">Find Work</button>
-              <button className="staff-button">Recruit Staff</button>
+            <div className="stat-card">
+              <i className="fas fa-heartbeat"></i>
+              <h3>5% Decrease in Hiring Costs</h3>
+              <p>Reduces recruitment costs while maintaining quality.</p>
+            </div>
+
+            <div className="stat-card">
+              <i className="fas fa-chart-line"></i>
+              <h3>6.5X Faster Hiring</h3>
+              <p>Our AI-powered hiring platform accelerates talent acquisition.</p>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Hospitality Section */}
-      <section className="hospitality-section">
-        <div className="hospitality-container">
-          <div className="hospitality-content">
-            <h2 className="hospitality-title">We Care Passionately About Hospitality and People</h2>
-            <p className="hospitality-description">
-              Enabling incredible experiences starts with loving what you do. 
-              That’s why Aldgate Recruitment is committed to creating a comforting 
-              environment where you are excited for every shift.
-            </p>
-            <h3 className="cover-title">What We Cover</h3>
-            <ul className="cover-list">
-              <li><i className="fas fa-check-circle"></i> Flexible work opportunities</li>
-              <li><i className="fas fa-check-circle"></i> Personalized career growth</li>
-              <li><i className="fas fa-check-circle"></i> Competitive pay rates</li>
-              <li><i className="fas fa-check-circle"></i> Professional training programs</li>
-              <li><i className="fas fa-check-circle"></i> Supportive work environments</li>
-            </ul>
-            <button className="casual-role-button">I Am Looking For A Casual Role</button>
-          </div>
-          <div className="hospitality-image">
-            <img src={recruitmentImage} alt="Hospitality Careers" />
-          </div>
+        {/* Right Side: Lottie Animation */}
+        <div className="services-animation">
+          <Lottie animationData={servicesAnimation} loop={true} autoplay={true} />
         </div>
-      </section>
+      </div>
+    </section>
 
-      {/* Talent Solutions Section */}
-      <section className="talent-solutions-section">
-        <div className="talent-container">
-          <div className="talent-image">
-            <img src={recruitmentImage} alt="Talent Solutions" />
-          </div>
-          <div className="talent-content">
-            <h2 className="talent-title">Talent Solutions to Fuel Your Business and Drive Better Service</h2>
-            <p className="talent-description">
-              Every business is different, and so is the talent to drive it forward.
-              It takes experienced hospitality professionals to recognize great talent,
-              which is why we recruit exceptional people who bring experiences to life,
-              injecting knowledge, skill, and passion.
-            </p>
-            <h3 className="service-title">What We Service</h3>
-            <ul className="service-list">
-              <li><i className="fas fa-check-circle"></i> Flexible staffing solutions</li>
-              <li><i className="fas fa-check-circle"></i> Industry-experienced professionals</li>
-              <li><i className="fas fa-check-circle"></i> Quick hiring process</li>
-              <li><i className="fas fa-check-circle"></i> High-end hospitality staff</li>
-              <li><i className="fas fa-check-circle"></i> 24/7 support for employers</li>
-            </ul>
-            <button className="hire-staff-button">Find Casual High-End Staff</button>
-          </div>
-        </div>
-      </section>
+    {/* Departments Section */}
+<section className="departments-section">
+  <div className="departments-container">
+    {/* Left Side - Animated Illustration */}
+    <div className="departments-animation">
+      <Lottie animationData={departmentAnimation} loop={true} autoplay={true} />
+    </div>
+
+    {/* Right Side - Stats Section */}
+    <div className="departments-stats">
+      <div className="stat-card">
+        <i className="fas fa-chart-line"></i>
+        <h3>$45k</h3>
+        <p>Revenue per month for every 1,000 employees placed</p>
+      </div>
+
+      <div className="stat-card">
+        <i className="fas fa-hand-holding-usd"></i>
+        <h3>$213k</h3>
+        <p>Net profit per year for every 1,000 employees placed</p>
+      </div>
+
+      <div className="stat-card">
+        <i className="fas fa-users"></i>
+        <h3>500+ Candidates</h3>
+        <p>Placed in leading industries monthly</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
       {/* Call to Action Section */}
       <section className="cta-section">

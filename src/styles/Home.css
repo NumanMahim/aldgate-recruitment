@@ -159,246 +159,8 @@
 }
 
 
-/* ============================
-   BENEFITS SECTION (Styled like Image)
-   ============================ */
-   .benefits-section {
-    background: #f3f8fc; /* Light background */
-    padding: 80px 10%;
-    text-align: center;
-}
-
-/* Benefits Content - Flex Layout */
-.benefits-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Left Side - Text */
-.benefits-text {
-    max-width: 50%;
-    text-align: left;
-}
-
-.benefits-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #3d4c7d;
-    margin-bottom: 20px;
-}
-
-.benefits-description {
-    font-size: 1.2rem;
-    color: #5f6b8d;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* Demo Button */
-.demo-button {
-    background: #ff755c;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.demo-button:hover {
-    background: #ff5436;
-}
-
-.demo-button span {
-    margin-left: 5px;
-}
-
-/* Right Side - Lottie Animation */
-.benefits-animation {
-    width: 400px;
-    height: auto;
-}
-
-/* ============================
-   STATISTICS SECTION
-   ============================ */
-.benefits-stats {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 50px;
-}
-
-/* Individual Stat Card */
-.stat-card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    flex: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
-
-.stat-card i {
-    font-size: 2.5rem;
-    color: #0077ff;
-    margin-bottom: 15px;
-}
-
-.stat-card h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #3d4c7d;
-    margin-bottom: 10px;
-}
-
-.stat-card p {
-    font-size: 1.1rem;
-    color: #5f6b8d;
-}
-
-/* Hover Effect */
-.stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* ============================
-   RESPONSIVE DESIGN (Mobile Fixes)
-   ============================ */
-@media screen and (max-width: 768px) {
-    .benefits-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .benefits-text {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .benefits-animation {
-        width: 300px;
-        margin-top: 20px;
-    }
-
-    .benefits-stats {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
 
 
-/* ============================
-   SERVICES SECTION
-   ============================ */
-/* ============================
-   SERVICES SECTION
-   ============================ */
-   .services-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 10%;
-    background: linear-gradient(135deg, #141414, #2c2c2c);
-    color: white;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Overlay Effect for Depth */
-.services-overlay {
-    max-width: 900px;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-/* Section Title */
-.section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    background: linear-gradient(90deg, #ffcc00, #ff6600);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 8px rgba(255, 165, 0, 0.3);
-}
-
-/* Section Description */
-.section-description {
-    font-size: 1.2rem;
-    color: #ddd;
-    margin-bottom: 30px;
-}
-
-/* Services Container */
-.services-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-/* Individual Service Card */
-.service-card {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Icons */
-.service-card i {
-    font-size: 2.5rem;
-    color: #ffcc00;
-    margin-bottom: 15px;
-}
-
-/* Service Title */
-.service-card h3 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-/* Service Description */
-.service-card p {
-    font-size: 1.1rem;
-    color: #ddd;
-}
-
-/* Hover Effect */
-.service-card:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-}
-
-/* ============================
-   RESPONSIVE DESIGN (FOR SMALL SCREENS)
-   ============================ */
-@media screen and (max-width: 768px) {
-    .services-section {
-        padding: 40px 5%;
-    }
-
-    .services-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
 
 /* ============================
    THIRD SECTION (DARK BACKGROUND)
@@ -644,446 +406,340 @@
     }
 }
 
-
-
 /* ============================
-   DEPARTMENTS SECTION
+   BENEFITS SECTION (Styled like Image)
    ============================ */
-   .departments-section {
-    background: #79136d;
+   .benefits-section {
+    background: #021B39;
     padding: 80px 10%;
     text-align: center;
 }
 
-.departments-title {
+/* Benefits Content - Flex Layout */
+.benefits-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Left Side - Text */
+.benefits-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.benefits-title {
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 40px;
-    color: #333;
+    color: #15e670;
+    margin-bottom: 20px;
 }
 
-/* Departments Grid */
-.departments-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+.benefits-description {
+    font-size: 1.2rem;
+    color: #fdfdfd;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-/* Department Card */
-.department-card {
-    flex: 1;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Card Hover Effect */
-.department-card:hover {
-    transform: scale(1.05);
-}
-
-/* Placeholder for Image */
-.department-image {
-    height: 180px;
-    background: url("../images/placeholder.jpg") center/cover no-repeat;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-/* Card Content */
-.department-content {
-    padding: 20px;
-}
-
-.department-content h3 {
-    font-size: 1.5rem;
+/* Demo Button */
+.demo-button {
+    background: #ff755c;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin-bottom: 10px;
-    color: #222;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
-.department-content p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.5;
+.demo-button:hover {
+    background: #ff5436;
+}
+
+.demo-button span {
+    margin-left: 5px;
+}
+
+/* Right Side - Lottie Animation */
+.benefits-animation {
+    width: 400px;
+    height: auto;
 }
 
 /* ============================
-   RESPONSIVE DESIGN
+   STATISTICS SECTION
+   ============================ */
+.benefits-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Individual Stat Card */
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.stat-card i {
+    font-size: 2.5rem;
+    color: #0077ff;
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3d4c7d;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 1.1rem;
+    color: #5f6b8d;
+}
+
+/* Hover Effect */
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================
+   RESPONSIVE DESIGN (Mobile Fixes)
+   ============================ */
+@media screen and (max-width: 768px) {
+    .benefits-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefits-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .benefits-animation {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .benefits-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ============================
+   SERVICES SECTION (MODERN DESIGN)
+   ============================ */
+   .services-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000; /* Deep Blue */
+    padding: 80px 10%;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Services Container */
+.services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left Side - Text & Stats */
+.services-text {
+    max-width: 50%;
+}
+
+/* Section Title */
+.services-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: rgb(21, 123, 239);
+    margin-bottom: 15px;
+}
+
+/* Section Description */
+.services-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Stats Grid */
+.services-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Individual Stat Cards */
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Stat Card Icons */
+.stat-card i {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Stat Title */
+.stat-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Stat Description */
+.stat-card p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+/* Hover Effect */
+.stat-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Right Side - Animation */
+.services-animation {
+    max-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* ============================
+   RESPONSIVE DESIGN (FOR SMALL SCREENS)
+   ============================ */
+@media screen and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-text {
+        max-width: 100%;
+    }
+
+    .services-animation {
+        max-width: 80%;
+        margin-top: 30px;
+    }
+
+    .services-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================
+   DEPARTMENTS SECTION (Styled Like Image)
+   ============================ */
+   .departments-section {
+    background: #021B39; /* Navy Blue Background */
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Main Container */
+.departments-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+}
+
+/* Left Side - Animation */
+.departments-animation {
+    width: 400px;
+}
+
+/* Right Side - Stats */
+.departments-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Stat Cards */
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Stat Card Icons */
+.stat-card i {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* Stat Title */
+.stat-card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Stat Description */
+.stat-card p {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+/* Hover Effect */
+.stat-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* ============================
+   RESPONSIVE DESIGN (Mobile Fix)
    ============================ */
 @media screen and (max-width: 768px) {
     .departments-container {
         flex-direction: column;
-        gap: 15px;
-    }
-}
-
-
-/* ============================
-   RECRUITMENT INFO SECTION
-   ============================ */
-   .recruitment-section {
-    background: #f9f5f0;
-    padding: 80px 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.recruitment-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Left Side - Image */
-.recruitment-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Right Side - Content */
-.recruitment-content {
-    max-width: 50%;
-}
-
-.recruitment-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1a1a1a;
-}
-
-.recruitment-description {
-    font-size: 1.1rem;
-    color: #333;
-    margin: 15px 0;
-    line-height: 1.6;
-}
-
-/* Offer List */
-.offer-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #1a1a1a;
-}
-
-.offer-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.offer-list li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    color: #333;
-    padding: 8px 0;
-}
-
-.offer-list li i {
-    color: #e6a00f;
-    font-size: 1.2rem;
-}
-
-/* Buttons */
-.recruitment-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.work-button,
-.staff-button {
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.work-button {
-    background: #e6a00f;
-    border: none;
-    color: black;
-}
-
-.work-button:hover {
-    background: #c88b0d;
-}
-
-.staff-button {
-    background: #444;
-    border: none;
-    color: white;
-}
-
-.staff-button:hover {
-    background: #666;
-}
-
-/* ============================
-   RESPONSIVE DESIGN
-   ============================ */
-@media screen and (max-width: 768px) {
-    .recruitment-container {
-        flex-direction: column;
         text-align: center;
     }
 
-    .recruitment-content {
-        max-width: 100%;
-    }
-
-    .recruitment-buttons {
-        justify-content: center;
-    }
-
-    .offer-list li {
-        justify-content: center;
-    }
-}
-
-
-/* ============================
-   HOSPITALITY & PEOPLE SECTION
-   ============================ */
-   .hospitality-section {
-    background: #faf5ee;
-    padding: 80px 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.hospitality-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Left Side - Text */
-.hospitality-content {
-    max-width: 50%;
-}
-
-.hospitality-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1a1a1a;
-}
-
-.hospitality-description {
-    font-size: 1.1rem;
-    color: #333;
-    margin: 15px 0;
-    line-height: 1.6;
-}
-
-/* Cover List */
-.cover-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #1a1a1a;
-}
-
-.cover-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.cover-list li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    color: #333;
-    padding: 8px 0;
-}
-
-.cover-list li i {
-    color: #e6a00f;
-    font-size: 1.2rem;
-}
-
-/* Button */
-.casual-role-button {
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #e6a00f;
-    border: none;
-    color: black;
-    transition: all 0.3s ease-in-out;
-    margin-top: 15px;
-}
-
-.casual-role-button:hover {
-    background: #c88b0d;
-}
-
-/* Right Side - Image */
-.hospitality-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* ============================
-   RESPONSIVE DESIGN
-   ============================ */
-@media screen and (max-width: 768px) {
-    .hospitality-container {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-
-    .hospitality-content {
-        max-width: 100%;
-    }
-
-    .casual-role-button {
-        width: 100%;
-    }
-
-    .cover-list li {
-        justify-content: center;
-    }
-}
-
-
-/* ============================
-   BLOG SECTION
-   ============================ */
-.blog-section {
-    background: #fafafa;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-/* ============================
-   TALENT SOLUTIONS SECTION
-   ============================ */
-   .talent-solutions-section {
-    background: #faf5ee;
-    padding: 80px 10%;
-    display: flex;
-    justify-content: center;
-}
-
-.talent-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-}
-
-/* Left Side - Image */
-.talent-image img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Right Side - Text */
-.talent-content {
-    max-width: 50%;
-}
-
-.talent-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #1a1a1a;
-}
-
-.talent-description {
-    font-size: 1.1rem;
-    color: #333;
-    margin: 15px 0;
-    line-height: 1.6;
-}
-
-/* Service List */
-.service-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #1a1a1a;
-}
-
-.service-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.service-list li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1rem;
-    color: #333;
-    padding: 8px 0;
-}
-
-.service-list li i {
-    color: #e6a00f;
-    font-size: 1.2rem;
-}
-
-/* Button */
-.hire-staff-button {
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    background: #e6a00f;
-    border: none;
-    color: black;
-    transition: all 0.3s ease-in-out;
-    margin-top: 15px;
-}
-
-.hire-staff-button:hover {
-    background: #c88b0d;
-}
-
-/* ============================
-   RESPONSIVE DESIGN
-   ============================ */
-@media screen and (max-width: 768px) {
-    .talent-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .talent-content {
-        max-width: 100%;
-    }
-
-    .hire-staff-button {
-        width: 100%;
-    }
-
-    .service-list li {
-        justify-content: center;
+    .departments-animation {
+        width: 80%;
+        margin-bottom: 30px;
     }
 }
 
